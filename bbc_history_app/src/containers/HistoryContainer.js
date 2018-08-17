@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import EventList from '../components/EventList'
+import EventList from '../components/EventList';
+import Calendar from 'react-calendar';
 
 class HistoryContainer extends Component {
 
@@ -20,6 +21,7 @@ class HistoryContainer extends Component {
   render() {
     return (
       <React.Fragment>
+        <Calendar/>
         <EventList events={this.state.events}/>
       </React.Fragment>
 
