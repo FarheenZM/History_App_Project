@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import HistoryContainer from './containers/HistoryContainer'
-
 import ChartComponent from './components/ChartComponent'
 
 class App extends Component {
