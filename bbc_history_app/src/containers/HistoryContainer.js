@@ -6,10 +6,13 @@ class HistoryContainer extends Component {
 
   constructor(props){
     super(props)
+    this.logState = this.logState.bind(this);
     this.state = {
-      events: []
+      events: [],
+      date: new Date()
     };
   }
+
 
   componentDidMount(){
     fetch('http://localhost:3001/data')
@@ -18,10 +21,24 @@ class HistoryContainer extends Component {
     .catch(err => console.log(err));
   }
 
+  getEvents(day){
+    fetch('http://localhost:3001/data/date/' + day)
+  }
+
+  onChange = date => this.setState({date})
+
+  logState(){
+    console.log(this.state.date);
+  }
+
   render() {
     return (
       <React.Fragment>
-        <Calendar/>
+        <Calendar
+          onChange={this.onChange}
+          // onChange={this.logState}
+          value={this.state.date}
+        />
         <EventList events={this.state.events}/>
       </React.Fragment>
 
