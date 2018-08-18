@@ -1,11 +1,16 @@
 import React from "react";
 
 const Event = (props) => {
-  return(
-      <div>
-      {props.event["year"]}
-      </div>
-  )
+
+  if(!props.year){
+      return null;
+  }
+  return (
+
+    <React.Fragment>
+         <p>Year: {props.year}</p>
+         <p>Text: {props.text}</p>
+       </React.Fragment>)
 }
 
 export default Event;

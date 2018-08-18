@@ -20,8 +20,8 @@ class HistoryContainer extends Component {
   render() {
     return (
       <React.Fragment>
-        <EventList events={this.state.events}/>
-        <ChartComponent chartEvents={this.state.events}/>
+        {/* <EventList events={this.state.events}/>
+        <ChartComponent chartEvents={this.state.events}/> */}
       </React.Fragment>
 
     );

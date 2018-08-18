@@ -1,48 +1,26 @@
 import React from 'react'
 import { render } from 'react-dom';
 import { Chart } from 'react-google-charts';
+import Event from './Event';
 
-const chartEvents = [
- {
-   eventName: 'select',
-   callback(chartWrapper) {
-     console.log('Selected', chartWrapper.getChart().getSelection());
-   }
- }
-];
+const ChartComponent = (props) =>{
 
-const options = {
- title: 'Events per year',
- hAxis: { title: 'Year', viewWindow: { min: 309, max: 2017 } },
- // vAxis: { title: 'Weight', viewWindow: { min: 0, max: 15 } },
- legend: 'none'
-};
-const data = [
- ['Year', 'Event'],
- [309, 'A'],
- [1400, 'B'],
- [1800, 'C'],
- [400, 'D'],
- [1989, 'E'],
- [2001, 'F'],
- [2004, 'G'],
- [2010, 'H'],
- [2017, 'I']
-];
+ const eventList = props.events.map(event => {
+   //console.log(event.year+" "+event.text);
+    return <li key={event.year+event.text}>
+      <Event
+        year={event.year}
+        text={event.text}/>
+      </li>
+  })
 
-const ChartComponent = () => {
- return (
-   <Chart
-     chartType='ScatterChart'
-     data={data}
-     options={options}
-     width='80%'
-     height='400px'
-     legendToggle
-   />
- );
-};
+  return (
+    <div className="chart-container">
+    <ol className="event-list">{eventList}
+    </ol>
+    </div>
+  )
+}
 
-// render(<ChartComponent />, document.getElementByID('app'));
 
 export default ChartComponent;
