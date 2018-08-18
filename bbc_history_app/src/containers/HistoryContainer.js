@@ -7,21 +7,22 @@ class HistoryContainer extends Component {
   constructor(props){
     super(props)
     this.state = {
-      events: []
+      data: []
     };
   }
 
   componentDidMount(){
     fetch('http://localhost:3001/data')
     .then(response => response.json())
-    .then(events => this.setState({events: events["data"]["Events"]}))
+    .then(data => this.setState({data}))
     .catch(err => console.log(err));
   }
 
   render() {
     return (
       <React.Fragment>
-        <Calendar/>
+        <h1>What happened on .. {this.state.data.date}</h1>
+        <Calendar />
         <EventList events={this.state.events}/>
       </React.Fragment>
 
