@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import EventList from '../components/EventList'
 import { Chart } from 'react-google-charts';
-import ChartComponent from '../components/ChartComponent'
+import ChartComponent from '../components/ChartComponent';
+import TimeLine from '../components/TimeLine';
 
 class ChartContainer extends Component {
 
@@ -24,7 +25,7 @@ class ChartContainer extends Component {
     console.log(this.state.events);
     return(
       <React.Fragment>
-        <ChartComponent events = {this.state.events}/>
+        <TimeLine events = {this.state.events}/>
       </React.Fragment>
     );
   }

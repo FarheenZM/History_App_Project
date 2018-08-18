@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 //import HistoryContainer from './containers/HistoryContainer'
-import ChartContainer from './containers/ChartContainer'
+import ChartContainer from './containers/ChartContainer';
+import TimeLine from './components/TimeLine';
 //import ChartComponent from './components/ChartComponent'
 
 class App extends Component {
