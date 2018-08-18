@@ -5,13 +5,24 @@ import Event from './Event';
 import { render } from 'react-dom';
 
 const TimeLine = (props) =>{
- const eventList = props.events.map(event => {
+
+  function getPosition(n) {
+    if(n % 2 == 0){
+     return "right";
+   }else{
+     return "left";
+   }
+  }
+
+
+ const eventList = props.events.map((event, index) => {
    //console.log(event.year+" "+event.text);
     return <VerticalTimelineElement
-      key={event.year + event.text}
+      key={index}
       className="vertical-timeline-element--work"
       date={event.year}
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}>
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      position={getPosition(index)}>
 
       <h3 className="vertical-timeline-element-title">{event.year}</h3>
     <h4 className="vertical-timeline-element-subtitle"></h4>
@@ -19,7 +30,7 @@ const TimeLine = (props) =>{
       {event.text}
     </p>
   </VerticalTimelineElement>
-  })
+})
 
   return (
   <VerticalTimeline>
