@@ -21,6 +21,7 @@ class HistoryContainer extends Component {
     return (
       <React.Fragment>
         <EventList events={this.state.events}/>
+        <ChartComponent chartEvents={this.state.events}/>
       </React.Fragment>
 
     );
