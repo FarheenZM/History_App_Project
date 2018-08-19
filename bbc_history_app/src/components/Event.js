@@ -3,7 +3,8 @@ import React from "react";
 const Event = (props) => {
   return(
       <div>
-      {props.event["year"]}
+      <b>{props.event["year"]} : </b>
+      {props.event["text"]}
       </div>
   )
 }

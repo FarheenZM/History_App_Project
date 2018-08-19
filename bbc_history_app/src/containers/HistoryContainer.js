@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import EventList from '../components/EventList'
+import ChartComponent from '../components/ChartComponent'
+import TimelineComponent from '../components/TimelineComponent'
+
 
 class HistoryContainer extends Component {
 
@@ -21,7 +24,8 @@ class HistoryContainer extends Component {
     return (
       <React.Fragment>
         <EventList events={this.state.events}/>
-        <ChartComponent chartEvents={this.state.events}/>
+        <ChartComponent events={this.state.events}/>
+        <TimelineComponent events={this.state.events}/>
       </React.Fragment>
 
     );
