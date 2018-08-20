@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TimelineComponent from '../components/TimelineComponent'
+import MainNav from "../components/MainNav"
 
 class HistoryContainer extends Component {
 
@@ -7,7 +8,7 @@ class HistoryContainer extends Component {
     super(props)
     this.state = {
       events: [],
-      showEvents: true,
+      showEvents: false,
 
       births: [],
       showBirths: false,
@@ -43,7 +44,10 @@ class HistoryContainer extends Component {
   render() {
 
     return (
+
       <React.Fragment>
+
+        <MainNav/>
 
         <button onClick={this.handleEventsButtonClick}>Display Events </button>
         <button onClick={this.handleBirthsButtonClick}>Display Births </button>
@@ -69,6 +73,7 @@ class HistoryContainer extends Component {
                 <TimelineComponent events={this.state.deaths}/></div>) :
                 null
               }
+
 
             </React.Fragment>
 
