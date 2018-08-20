@@ -17,15 +17,16 @@ app.get('/data', function(req, res){
   });
 });
 
-// app.get('/data/:date', function(req, res){
-//   const date = params[:date];
-//   request(`http://history.muffinlabs.com/date/8/${date}`, function(error, response, body){
-//     if(!error && response.statusCode === 200){
-//       const data = JSON.parse(body);
-//       res.json(data);
-//     }
-//   })
-// })
+app.get('/data/:month/:day', function(req, res){
+  const day = req.params.day;
+  const month = req.params.month;
+  request(`http://history.muffinlabs.com/date/${month}/${day}`, function(error, response, body){
+    if(!error && response.statusCode === 200){
+      const data = JSON.parse(body);
+      res.json(data);
+    }
+  })
+})
 
 app.listen(3001, function () {
   console.log('App running on port ' + this.address().port);
