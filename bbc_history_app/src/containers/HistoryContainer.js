@@ -52,6 +52,7 @@ class HistoryContainer extends Component {
   render() {
 
     return (
+
       <React.Fragment>
         <div className="logo">
           <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
@@ -87,6 +88,7 @@ class HistoryContainer extends Component {
                 <TimelineComponent events={this.state.deaths}/></div>) :
                 null
               }
+
 
             </React.Fragment>
 
