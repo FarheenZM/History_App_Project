@@ -7,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>World History App</h1>
         <HistoryContainer/>
       </React.Fragment>
     );

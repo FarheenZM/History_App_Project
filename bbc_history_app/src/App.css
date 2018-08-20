@@ -26,3 +26,64 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+#header_image {
+  display: flex;
+  background-image: url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fportobellostreet-294832.c.cdn77.org%2Fimagenes_muebles%2F57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg');
+  background-repeat: round;
+  /* width: 100%; */
+  height: 700px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  text-align: center;
+  padding-bottom: 0px;
+  background-color: #222428;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  border: 2px solid #d6223d;
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  padding: 8px 15px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-weight: bolder;
+  font: Garamond;
+}
+
+button:hover {
+  background-color: #d6223d;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 0.9;
+}
+
+.vertical-timeline-element--work {
+ background-image: url("http://portobellostreet-294832.c.cdn77.org/imagenes_muebles/57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg");
+}
+
+.something{
+ background-color: orange;
+}
+
+h3 {
+  font-weight: bolder;
+  font: Garamond;
+  font-family: monospace;
+}
+
+h4 {
+  font-weight: bolder;
+  font: Garamond;
+  font-family: monospace;
+  font-size: 15px;
+}
