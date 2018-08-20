@@ -29,7 +29,6 @@ const VList = (props) =>  {
 
 
 const VLElement = (props) =>  {
-
     return(
       <div>
         <VerticalTimelineElement
@@ -37,10 +36,8 @@ const VLElement = (props) =>  {
           date= {props.VLElementData["year"]}
           iconStyle={{ background: 'orange', color: '#fff' }}
           position= {(props.VLIndex % 2) ? "left" : "right"}>
-
           <h3 className="vertical-timeline-element-title">{props.VLElementData["text"]}</h3>
-          <h4 className="vertical-timeline-element-subtitle"><a href={props.VLElementData["links"][0]["link"]}>Wiki Link</a></h4>
-
+          {props.VLElementData["links"].length > 1 ? <h4 className="vertical-timeline-element-subtitle"><a href={props.VLElementData["links"][0]["link"]}>Wiki Link</a></h4> : null}
         </VerticalTimelineElement>
 
       </div>
