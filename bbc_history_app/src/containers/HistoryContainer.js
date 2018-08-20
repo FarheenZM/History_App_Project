@@ -45,7 +45,7 @@ class HistoryContainer extends Component {
     return (
       <React.Fragment>
         <div className="logo">
-          <img src="https://a72821ff-a-62cb3a1a-s-sites.googlegroups.com/site/imagenescleyra/logo.png?attachauth=ANoY7coLmdNNvhmrJwC10uStlQ8JDnJTFxKUv3BmHuMYtkaqPFi_g6QhdoMOeHYX-sYV7xC27eQu89CuQl_LGRp0chK0weKOlkLg3b5qlCkQ5c7KTqESOgTaSGOIQKJPbyhVc9sCyTcN02J86qP6ELpFpLVKc1khlTSv_qO-YHLkcEpGcy5gJub82A8FTkH9wkzcw_MYEYUe21Ve7hkqj7HQx3YnusW67w%3D%3D&attredirects=0" className = "logo" alt="App Logo"/>
+          <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
         </div>
         <div id="header_image">
         <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
