@@ -53,10 +53,14 @@ class HistoryContainer extends Component {
 
     return (
       <React.Fragment>
-
-        <button onClick={this.handleEventsButtonClick}>Display Events </button>
-        <button onClick={this.handleBirthsButtonClick}>Display Births </button>
-        <button onClick={this.handleDeathsButtonClick}>Display Deaths </button>
+        <div className="logo">
+          <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
+        </div>
+        <div id="header_image">
+        <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
+        <button onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
+        <button onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
+        </div>
 
         <DatePicker
         selected={this.state.date}
@@ -85,6 +89,7 @@ class HistoryContainer extends Component {
               }
 
             </React.Fragment>
+
 
           );
         }
