@@ -14,7 +14,6 @@ const EventList = (props) => {
   return(
     <div>
       {allEvents}
-
     </div>
   )
 }
