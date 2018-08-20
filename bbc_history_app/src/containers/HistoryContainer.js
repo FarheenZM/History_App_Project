@@ -8,7 +8,7 @@ class HistoryContainer extends Component {
     super(props)
     this.state = {
       events: [],
-      showEvents: false,
+      showEvents: true,
 
       births: [],
       showBirths: false,
