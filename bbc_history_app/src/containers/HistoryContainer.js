@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import TimelineComponent from '../components/TimelineComponent'
+import TimelineComponent from '../components/TimelineComponent';
+import DatePicker from '../components/datePicker';
+
+import 'react-datepicker/dist/react-datepicker.css';
 
 class HistoryContainer extends Component {
 
@@ -19,10 +22,16 @@ class HistoryContainer extends Component {
     this.handleEventsButtonClick = this.handleEventsButtonClick.bind(this);
     this.handleBirthsButtonClick = this.handleBirthsButtonClick.bind(this);
     this.handleDeathsButtonClick = this.handleDeathsButtonClick.bind(this);
+    this.loadAPIFunction = this.loadAPIFunction.bind(this);
   }
 
   componentDidMount(){
-    fetch('http://localhost:3001/data')
+    this.loadAPIFunction();
+  }
+
+  loadAPIFunction(month, day){
+    let url = day && month ? `http://localhost:3001/data/${month}/${day}` : "http://localhost:3001/data/"
+    fetch(url)
     .then(response => response.json())
     .then(events => this.setState({events: events["data"]["Events"], births: events["data"]["Births"], deaths: events["data"]["Deaths"]}))
     .catch(err => console.log(err));
@@ -48,6 +57,11 @@ class HistoryContainer extends Component {
         <button onClick={this.handleEventsButtonClick}>Display Events </button>
         <button onClick={this.handleBirthsButtonClick}>Display Births </button>
         <button onClick={this.handleDeathsButtonClick}>Display Deaths </button>
+
+        <DatePicker
+        selected={this.state.date}
+        onDatePicked={this.loadAPIFunction}
+      />
 
         {/* First button display */}
         {this.state.showEvents ?
