@@ -15,6 +15,9 @@ return(
     <React.Fragment>
       <div>
         <NavBar/>
+        {/* <div className="logo">
+          <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
+        </div> */}
         <Route exact path="/data" component={HistoryContainer}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
@@ -27,14 +30,3 @@ return(
 
 
 export default App;
-
-
-
-// return (
-//   <React.Fragment>
-//     <h1>World History App</h1>
-//     <HistoryContainer/>
-//   </React.Fragment>
-// );
-// }
-// }

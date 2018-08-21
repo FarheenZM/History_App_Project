@@ -1,0 +1,23 @@
+li {
+  display: inline-block;
+  padding: 2.5em;
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  /* font-family:  */
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+li a:active {
+    color: #CC3D61;
+}
