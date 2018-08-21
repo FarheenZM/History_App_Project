@@ -32,6 +32,7 @@ class datePicker extends React.Component {
     return <DatePicker
         selected={this.state.startDate}
         onChange={this.handleChange}
+        placeholderText="Click to select a date"
     />;
   }
 }

@@ -87,3 +87,16 @@ h4 {
   font-family: monospace;
   font-size: 15px;
 }
+
+input{
+  font-size: 1.1em;
+  padding: 3px;
+  border: 2px solid #d6223d;
+}
+
+#date-picker{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 20px;
+}

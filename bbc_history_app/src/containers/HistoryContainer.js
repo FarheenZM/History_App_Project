@@ -58,15 +58,19 @@ class HistoryContainer extends Component {
           <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
         </div>
         <div id="header_image">
-        <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
-        <button onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
-        <button onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
+          <div id="header-content">
+            <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
+            <button onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
+            <button onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
+            <div id="date-picker">
+              <DatePicker
+                selected={this.state.date}
+                onDatePicked={this.loadAPIFunction}
+              />
+            </div>
+          </div>
         </div>
 
-        <DatePicker
-        selected={this.state.date}
-        onDatePicked={this.loadAPIFunction}
-      />
 
         {/* First button display */}
         {this.state.showEvents ?
