@@ -108,7 +108,7 @@ h4 {
 input{
   font-size: 1.1em;
   padding: 3px;
-  border: 2px solid #d6223d;
+  border: 1px solid orange;
 }
 
 #date-picker{
@@ -116,6 +116,7 @@ input{
   justify-content: center;
   margin: 5px;
   margin-top: 20px;
+}
 h1 {
   font-weight: bolder;
   font: Garamond;
