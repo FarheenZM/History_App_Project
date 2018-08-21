@@ -87,3 +87,11 @@ h4 {
   font-family: monospace;
   font-size: 15px;
 }
+
+h1 {
+  font-weight: bolder;
+  font: Garamond;
+  font-family: monospace;
+  color: #d6223d;
+  text-align: center;
+}
