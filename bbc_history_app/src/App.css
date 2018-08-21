@@ -105,8 +105,7 @@ h4 {
   font-size: 15px;
 }
 
-.event_heading {
-input{
+input {
   font-size: 1.1em;
   padding: 3px;
   border: 1px solid orange;
@@ -118,7 +117,8 @@ input{
   margin: 5px;
   margin-top: 20px;
 }
-h1 {
+
+.event_heading{
 
   font-weight: bolder;
   font: Garamond;

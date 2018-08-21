@@ -1,17 +1,37 @@
 
 h1{
-  color: #361E1E;
   text-align: center;
   font-size: 45px;
+  font family: Garamond;
 
 }
 
 .about-us{
+text-align: left;
+width: 30%;
+
+float: right;
+
 
 }
 
-.logo{
+p{
+  /* background-color: #A9A9A9; */
+  color: black;
+  letter-spacing: 3px;
+  padding: 25px;
+  font-size: 20px;
+  font-family: Garamond;
+  height: 500px;
 
-position: top;
+}
+
+
+.headImage{
+opacity: 0.6;
+position: absolute;
+bottom: 5px;
+height: 600px;
+weight: 500px;
 
 }
