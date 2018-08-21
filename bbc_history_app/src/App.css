@@ -38,10 +38,11 @@ gel-type-enable--markup-output: true;
 
 #header_image {
   display: flex;
-  background-image: url('http://portobellostreet-294832.c.cdn77.org/imagenes_muebles/57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg');
+  /* background-image: url('http://portobellostreet-294832.c.cdn77.org/imagenes_muebles/57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg'); */
+  /* background: orange */
   background-repeat: round;
   width: 100%;
-  height: 700px;
+  height: 100px;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -58,7 +59,8 @@ body {
 }
 
 .main_button {
-  border: 2px solid #d6223d;
+
+  border: 2px solid orange;
   color: black;
   background-color: white;
   font-size: 18px;
@@ -70,9 +72,9 @@ body {
 }
 
 .main_button:hover {
-  background-color: #d6223d;
+  background-color: orange;
   color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.05), 0 10px 25px 0 rgba(0,0,0,0.05);
   opacity: 0.9;
 }
 
@@ -87,7 +89,7 @@ button {
  background-image: url("http://portobellostreet-294832.c.cdn77.org/imagenes_muebles/57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg");
 }
 
-.something{
+.verticalTimeline{
  background-color: orange;
 }
 

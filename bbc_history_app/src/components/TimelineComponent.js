@@ -20,7 +20,7 @@ const VList = (props) =>  {
 
     return(
       <div>
-        <VerticalTimeline className='something'>
+        <VerticalTimeline className='verticalTimeline'>
           {allEvents}
         </VerticalTimeline>
       </div>

@@ -59,9 +59,9 @@ class HistoryContainer extends Component {
         </div>
         <div id="header_image">
           <div id="header-content">
-            <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
-            <button onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
-            <button onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
+            <button className="main_button" onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
+            <button className="main_button" onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
+            <button className="main_button" onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
             <div id="date-picker">
               <DatePicker
                 selected={this.state.date}
