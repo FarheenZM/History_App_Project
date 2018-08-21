@@ -15,7 +15,7 @@ return(
     <React.Fragment>
       <div>
         <NavBar/>
-        <Route exact path="/data" component={HistoryContainer}/>
+        <Route exact path="/" component={HistoryContainer}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
       </div>
