@@ -106,6 +106,20 @@ h4 {
 }
 
 .event_heading {
+input{
+  font-size: 1.1em;
+  padding: 3px;
+  border: 1px solid orange;
+}
+
+#date-picker{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 20px;
+}
+h1 {
+
   font-weight: bolder;
   font: Garamond;
   font-family: monospace;
