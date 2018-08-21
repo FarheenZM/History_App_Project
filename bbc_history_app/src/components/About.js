@@ -20,7 +20,6 @@ const About = () => (
 </div>
 </React.Fragment>
 
-
 );
 
 
