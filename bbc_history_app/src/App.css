@@ -105,7 +105,7 @@ h4 {
   font-size: 15px;
 }
 
-h1 {
+.event_heading {
   font-weight: bolder;
   font: Garamond;
   font-family: monospace;

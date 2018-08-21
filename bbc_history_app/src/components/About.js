@@ -10,7 +10,9 @@ const About = () => (
   <h1>About Us</h1>
   <p>The brief was...</p>
 </div>
-
+<div className="headImage">
+  <img src="landing-logo.png" className = "headImage" alt="Landing Logo"/>
+</div>
 </React.Fragment>
 
 
