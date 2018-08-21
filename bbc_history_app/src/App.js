@@ -27,14 +27,3 @@ return(
 
 
 export default App;
-
-
-
-// return (
-//   <React.Fragment>
-//     <h1>World History App</h1>
-//     <HistoryContainer/>
-//   </React.Fragment>
-// );
-// }
-// }

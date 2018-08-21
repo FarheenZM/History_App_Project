@@ -75,6 +75,7 @@ class HistoryContainer extends Component {
         {/* First button display */}
         {this.state.showEvents ?
           (<div>
+            <h1>TODAY iN HiSTORY</h1>
             <TimelineComponent events={this.state.events}/></div>) :
             null
           }
@@ -82,6 +83,7 @@ class HistoryContainer extends Component {
           {/* Second button display */}
           {this.state.showBirths ?
             (<div>
+              <h1>BiRTHS TODAY iN HiSTORY</h1>
               <TimelineComponent events={this.state.births}/></div>) :
               null
             }
@@ -89,6 +91,7 @@ class HistoryContainer extends Component {
             {/* Third button display */}
             {this.state.showDeaths ?
               (<div>
+                <h1>DEATHS TODAY iN HiSTORY</h1>
                 <TimelineComponent events={this.state.deaths}/></div>) :
                 null
               }
