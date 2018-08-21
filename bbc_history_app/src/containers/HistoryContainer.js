@@ -58,9 +58,9 @@ class HistoryContainer extends Component {
           <img src="HistoryLogo.png" className = "logo" alt="App Logo"/>
         </div>
         <div id="header_image">
-        <button onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
-        <button onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
-        <button onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
+        <button className="main_button" onClick={this.handleEventsButtonClick}>DiSPLAY EVENTS </button>
+        <button className="main_button" onClick={this.handleBirthsButtonClick}>DiSPLAY BiRTHS </button>
+        <button className="main_button" onClick={this.handleDeathsButtonClick}>DiSPLAY DEATHS </button>
         </div>
 
         <DatePicker
@@ -71,6 +71,7 @@ class HistoryContainer extends Component {
         {/* First button display */}
         {this.state.showEvents ?
           (<div>
+            <h1>TODAY iN HiSTORY</h1>
             <TimelineComponent events={this.state.events}/></div>) :
             null
           }
@@ -78,6 +79,7 @@ class HistoryContainer extends Component {
           {/* Second button display */}
           {this.state.showBirths ?
             (<div>
+              <h1>BiRTHS TODAY iN HiSTORY</h1>
               <TimelineComponent events={this.state.births}/></div>) :
               null
             }
@@ -85,6 +87,7 @@ class HistoryContainer extends Component {
             {/* Third button display */}
             {this.state.showDeaths ?
               (<div>
+                <h1>DEATHS TODAY iN HiSTORY</h1>
                 <TimelineComponent events={this.state.deaths}/></div>) :
                 null
               }

@@ -1,3 +1,12 @@
+gel-type-enable--markup-output: true;
+
+@import '/node_modules/gel-sass-tools/sass-tools';
+@import '/node_modules/sass-mq/mq';
+@import '/node_modules/gel-typography/typography';
+
+@include gel-typography('pica');
+@include gel-typography('canon');
+
 .App {
   text-align: center;
 }
@@ -29,7 +38,7 @@
 
 #header_image {
   display: flex;
-  background-image: url('https://slack-imgs.com/?c=1&url=http%3A%2F%2Fportobellostreet-294832.c.cdn77.org%2Fimagenes_muebles%2F57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg');
+  background-image: url('http://portobellostreet-294832.c.cdn77.org/imagenes_muebles/57169-Mueble-Cuadro-canvas-mapa-globo-terraqueo-1664.jpg');
   background-repeat: round;
   width: 100%;
   height: 700px;
@@ -48,7 +57,7 @@ body {
   background-color: white;
 }
 
-button {
+.main_button {
   border: 2px solid #d6223d;
   color: black;
   background-color: white;
@@ -60,11 +69,18 @@ button {
   font: Garamond;
 }
 
-button:hover {
+.main_button:hover {
   background-color: #d6223d;
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   opacity: 0.9;
+}
+
+button {
+  border: 1px solid orange;
+  font-size: 15px;
+  margin-top: 12px;
+  padding: 10px;
 }
 
 .vertical-timeline-element--work {
@@ -79,6 +95,7 @@ h3 {
   font-weight: bolder;
   font: Garamond;
   font-family: monospace;
+  @include gel-typography('pica');
 }
 
 h4 {
@@ -86,4 +103,12 @@ h4 {
   font: Garamond;
   font-family: monospace;
   font-size: 15px;
+}
+
+h1 {
+  font-weight: bolder;
+  font: Garamond;
+  font-family: monospace;
+  color: #d6223d;
+  text-align: center;
 }
