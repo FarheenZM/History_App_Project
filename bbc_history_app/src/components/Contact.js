@@ -44,6 +44,10 @@ const Contact = () => (
       <img src="landing-logo.png" className = "headImage" alt="Landing Logo"/>
     </div>
 
+    <footer>
+      <p className="copyright">&copy; Walk in History 2018</p>
+    </footer>
+
   </React.Fragment>
 
 );

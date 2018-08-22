@@ -9,22 +9,21 @@ import HistoryContainer from "./containers/HistoryContainer"
 
 class App extends Component {
   render() {
-return(
+    return(
 
-  <Router>
-    <React.Fragment>
-      <div>
-        <NavBar/>
-        <Route exact path="/" component={HistoryContainer}/>
-        <Route path="/about" component={About}/>
-        <Route path="/contact" component={Contact}/>
-      </div>
-
-      <p className="copyright">&copy; Walk in History 2018</p>
-    </React.Fragment>
-  </Router>
-)
-}
+      <Router>
+        <React.Fragment>
+          <div>
+            <NavBar/>
+            <Route exact path="/" component={HistoryContainer}/>
+            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
+          </div>
+          
+        </React.Fragment>
+      </Router>
+    )
+  }
 }
 
 
