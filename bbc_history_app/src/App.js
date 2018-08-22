@@ -19,6 +19,8 @@ return(
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
       </div>
+
+      <p className="copyright">&copy; Walk in History 2018</p>
     </React.Fragment>
   </Router>
 )

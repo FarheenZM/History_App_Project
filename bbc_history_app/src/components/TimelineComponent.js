@@ -39,8 +39,8 @@ const VLElement = (props) =>  {
 
           <h2>{props.VLElementData["year"]}</h2>
           <h3 className="vertical-timeline-element-title">{props.VLElementData["text"]}</h3>
-          {props.VLElementData["links"].length > 1 ? <h4 className="vertical-timeline-element-subtitle"><button><a href={props.VLElementData["links"][0]["link"]}>Wiki Link<img className="wikilink" src="wiki_icon.png" height="23" width="32"/></a></button></h4> : null}
-          <img src="feet-icon.png" height="100" width="130"/>
+          {props.VLElementData["links"].length > 1 ? <h4 className="vertical-timeline-element-subtitle"><button><a href={props.VLElementData["links"][0]["link"]}>Wiki Link<img className="wikilink" src="wiki_icon.png" height="23" width="32" alt="bbc wiki logo"/></a></button></h4> : null}
+          <img src="feet-icon.png" height="100" width="130" alt="feet logo"/>
         </VerticalTimelineElement>
 
       </div>
