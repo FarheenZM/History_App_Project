@@ -7,19 +7,22 @@ import Contact from "./components/Contact";
 import HistoryContainer from "./containers/HistoryContainer"
 
 
+
 class App extends Component {
   render() {
     return(
 
       <Router>
         <React.Fragment>
+
           <div>
             <NavBar/>
             <Route exact path="/" component={HistoryContainer}/>
             <Route path="/about" component={About}/>
             <Route path="/contact" component={Contact}/>
           </div>
-          
+
+
         </React.Fragment>
       </Router>
     )
