@@ -40,6 +40,7 @@ const Contact = () => (
       </table>
     </div>
 
+
     <div className="headImage">
       <img src="landing-logo.png" className = "headImage" alt="Landing Logo"/>
     </div>
